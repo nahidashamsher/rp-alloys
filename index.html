@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <!-- Custom CSS Starts -->
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./index.css">
     <!-- Custom CSS Ends -->
     <title>Document</title>
 </head>
@@ -461,12 +461,24 @@
                 delay: 2500,
                 disableOnInteraction: false,
             },
-            slidesPerView: 3,
-            spaceBetween: 44,
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            centeredSlides: true,
+            freeMode: true,
+            grabCursor: true,
+            loop: true,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
+                clickable: true
             },
+            breakpoints: {
+                500: {
+                    slidesPerView: 1
+                },
+                700: {
+                    slidesPerView: 3
+                }
+            }
         });
     </script>
 </body>
